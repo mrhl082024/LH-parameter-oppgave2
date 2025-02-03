@@ -28,6 +28,7 @@ console.log(products);
 
 /* Her er et pseudokode hint:
     funksjon totalsum skal ta inn products og et avslag med defaultverdi 0
+    skjekk at avslag ikke er mindre enn 0, og ikke større enn 100. 
     for hver produkt i products, legg til resultatet av cost * ammount * (100 - avslag)/100 
     returner totalsum
 */
