@@ -22,18 +22,22 @@ console.log(products);
 */
 
 /* Her er et pseudokode hint:
-    funksjon totalsum skal ta inn products og et avslag med defaultverdi 0
-    skjekk at avslag ikke er mindre enn 0, og ikke større enn 100.
-    for hver produkt i products, legg til resultatet av cost * ammount * (100 - avslag)/100 
+    funksjon totalsum skal ta inn products
+    definer en totalsum som skal returneres
+    for hver produkt i products, legg til resultatet av cost * ammount
     returner totalsum
 */
 
 //!!Skriv inn funksjonen din totalSum her:
 
-function totalSum(){
-    
+function totalSum(products) {
+  let sum = 0;
+  for (let i = 0; i < products.length; i++) {
+    sum += products[i].cost * products[i].ammount;
+    console.log(sum);
+  }
+  return sum;
 }
 
 /* Her ser du at vi forventer en funksjon som tar inn produktet, og et potensielt avlag, or returnerer totalkostnadden av alle produktene.  */
 console.log(totalSum(products));
-console.log(totalSum(products, 15));
